@@ -16,7 +16,7 @@ export default async function RootLayout({ children }) {
 
     //여기서 데이터를 받아올 때 생성된 캐시를 삭제해야 글 목록이 업데이트 된다.
     //Next.js 공식문서에서는 "Revaidating"항목으로 해결할 수 있다.
-    const resp = await fetch('http://localhost:9999/topics', {cache: 'no-store'});
+    const resp = await fetch(process.env.NEXT_PUBLIC_API_URL + 'topics', {cache: 'no-store'});
     /*방법1.
        const resp = await fetch('http://localhost:9999/topics', {next: {revalidate: 0}});
        fetch의 변수에 {next: {revalidate: 0}} : 0초동안만 캐시를 유지한다.*/
