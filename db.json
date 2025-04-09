@@ -1,0 +1,56 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "title": "html",
+      "body": "html is ..."
+    },
+    {
+      "id": 2,
+      "title": "css",
+      "body": "css is ..."
+    },
+    {
+      "title": "javascript",
+      "body": "javascript",
+      "id": 3
+    },
+    {
+      "title": "react",
+      "body": "react",
+      "id": 4
+    },
+    {
+      "title": "is gone",
+      "body": "is gone",
+      "id": 5
+    },
+    {
+      "title": "b",
+      "body": "b",
+      "id": 7
+    },
+    {
+      "title": "title update",
+      "body": "body update",
+      "id": 9
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
