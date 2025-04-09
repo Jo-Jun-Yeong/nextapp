@@ -1,6 +1,6 @@
 export default async function Read({params}){
 const awaitParams = await params;
-const resp = await fetch(`http://localhost:9999/topics/${awaitParams.id}`, {cache: 'no-store'});
+const resp = await fetch(`${process.env.NEXT_PUBLIC_API_URL}topics/${awaitParams.id}`, {cache: 'no-store'});
 const topic = await resp.json();
 
     return(

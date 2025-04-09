@@ -16,7 +16,7 @@ export function Control(){
             <li><Link href={`/update/${id}`}>Update</Link></li>
             <li><input type="button" value={"delete"} onClick={() => {
                 const options = {method:'DELETE'}
-                fetch('http://localhost:9999/topics/'+id, options)
+                fetch(`${process.env.NEXT_PUBLIC_API_URL}topics/${id}`, options)
                 .then(resp => resp.json())
                 .then(result=> {
                     //삭제 작업 후 '/'로 리디랙션
